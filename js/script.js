@@ -106,3 +106,52 @@ for (var i = 0; i < classe.length; i++) {
   console.log(classe[i]);
 }
 // -----------------------------------------------------------------------------
+
+
+// Terzo esercizio -------------------------------------------------------------
+// Funzioni --------------------------------------------------------------------
+function validString(string) {
+  for (var i = 0; i <= 9; i++) {
+    if (string.includes(i)) {
+      return false
+    }
+  }
+
+  if (isNaN(string)) {
+    return true
+  }
+}
+
+function validNumber(number) {
+  if (!isNaN(number)) {
+    return true
+  }
+}
+// -----------------------------------------------------------------------------
+
+var studenteInput = {};
+
+do {
+  studenteInput.Nome = prompt('Inserisci il nome del nuovo studente');
+} while (!validString(studenteInput.Nome));
+
+console.log(studenteInput);
+
+do {
+  studenteInput.Cognome = prompt('Inserisci il cognome del nuovo studente')
+} while (!validString(studenteInput.Cognome));
+
+console.log(studenteInput);
+
+do {
+  studenteInput.Eta = prompt("Inserisci l'età del nuovo studente")
+} while (!validNumber(studenteInput.Eta));
+
+console.log(studenteInput);
+
+classe.push(studenteInput);
+
+console.log(classe);
+
+console.log(classe[classe.length-1]);
+// -----------------------------------------------------------------------------
