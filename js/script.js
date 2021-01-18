@@ -15,82 +15,98 @@ for (var key in primoStudente) {
 var classe = [
   {
     'Nome' : 'Gabriel',
-    'Cognome' : 'Moraga Figueroa'
+    'Cognome' : 'Moraga Figueroa',
+    'Eta' : 23
   },
 
   {
     'Nome' : 'Lorenzo',
-    'Cognome' : 'Morelli'
+    'Cognome' : 'Morelli',
+    'Eta' : 'Non pervenuta'
   },
 
   {
     'Nome' : 'Michele',
-    'Cognome' : 'Poggi'
+    'Cognome' : 'Poggi',
+    'Eta' : 'Non pervenuta'
   },
 
   {
     'Nome' : 'Marco',
-    'Cognome' : 'Madia'
+    'Cognome' : 'Madia',
+    'Eta' : 'Non pervenuta'
   },
 
   {
     'Nome' : 'Marco',
-    'Cognome' : 'Gattuso'
+    'Cognome' : 'Gattuso',
+    'Eta' : 'Non pervenuta'
   },
 
   {
     'Nome' : 'Matt',
-    'Cognome' : 'Aster'
+    'Cognome' : 'Aster',
+    'Eta' : 'Non pervenuta'
   },
 
   {
     'Nome' : 'Gianandrea',
-    'Cognome' : 'Muià'
+    'Cognome' : 'Muià',
+    'Eta' : 'Non pervenuta'
   },
 
   {
     'Nome' : 'Nicola',
-    'Cognome' : 'Degobbis'
+    'Cognome' : 'Degobbis',
+    'Eta' : 'Non pervenuta'
   },
 
   {
     'Nome' : 'Gabrio',
-    'Cognome' : 'Pozzi'
+    'Cognome' : 'Pozzi',
+    'Eta' : 'Non pervenuta'
   },
 
   {
     'Nome' : 'Giulia',
-    'Cognome' : 'Bersani'
+    'Cognome' : 'Bersani',
+    'Eta' : 'Non pervenuta'
   },
 
   {
     'Nome' : 'Sara',
-    'Cognome' : 'Stefanizzi'
+    'Cognome' : 'Stefanizzi',
+    'Eta' : 'Non pervenuta'
   },
 
   {
     'Nome' : 'Luca',
-    'Cognome' : 'Occhi'
+    'Cognome' : 'Occhi',
+    'Eta' : 'Non pervenuta'
   },
 
   {
     'Nome' : 'Andrea',
-    'Cognome' : 'Guagnini'
+    'Cognome' : 'Guagnini',
+    'Eta' : 'Non pervenuta'
   },
 
   {
     'Nome' : 'Simone',
-    'Cognome' : 'Rosini'
+    'Cognome' : 'Rosini',
+    'Eta' : 'Non pervenuta'
   },
 
   {
     'Nome' : 'Tommaso',
-    'Cognome' : 'Amitrano'
+    'Cognome' : 'Amitrano',
+    'Eta' : 'Non pervenuta'
   },
 
   {
     'Nome' : 'Mattia',
-    'Cognome' : 'Ceniti'
+    'Cognome' : 'Ceniti',
+    'Eta' : 'Non pervenuta'
   }
 ]
 
@@ -100,7 +116,9 @@ for (var i = 0; i < classe.length; i++) {
   console.log('Studente ' + (i+1));
 
   for (var key in classe[i]) {
-    console.log(key + ': ' + classe[i][key]);
+    if (key !== 'Eta') {
+      console.log(key + ': ' + classe[i][key]);
+    }
   }
 
   console.log(classe[i]);
