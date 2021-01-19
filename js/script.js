@@ -151,18 +151,30 @@ var studenteInput = {};
 
 do {
   studenteInput.Nome = prompt('Inserisci il nome del nuovo studente');
+
+  if (!validString(studenteInput.Nome)) {
+    alert('Nome non valido.')
+  }
 } while (!validString(studenteInput.Nome));
 
 console.log(studenteInput);
 
 do {
   studenteInput.Cognome = prompt('Inserisci il cognome del nuovo studente')
+
+  if (!validString(studenteInput.Cognome)) {
+    alert('Cognome non valido.')
+  }
 } while (!validString(studenteInput.Cognome));
 
 console.log(studenteInput);
 
 do {
   studenteInput.Eta = prompt("Inserisci l'età del nuovo studente")
+
+  if (!validNumber(studenteInput.Eta)) {
+    alert('Età non valida.')
+  }
 } while (!validNumber(studenteInput.Eta));
 
 console.log(studenteInput);
